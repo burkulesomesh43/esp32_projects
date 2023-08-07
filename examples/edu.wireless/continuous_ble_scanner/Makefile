@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := spp_client_demo
+PROJECT_NAME := continuous_ble_scanner
 
 COMPONENT_ADD_INCLUDEDIRS := components/include
 

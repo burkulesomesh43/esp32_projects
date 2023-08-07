@@ -1,4 +1,4 @@
-# esp32-ble-scan
+# continuous BLE Scanner
 
 This is Template application for BLE Scanning
 

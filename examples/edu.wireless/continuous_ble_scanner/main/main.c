@@ -1,7 +1,7 @@
 /*===============================================================================================*/
 /*!
   @file
-    examples/edu.wireless/ble-scanner/main/main.c
+    examples/edu.wireless/continuous_ble_scanner/main/main.c
 
   @brief
     continuous ble scan with bluedroid source code.file

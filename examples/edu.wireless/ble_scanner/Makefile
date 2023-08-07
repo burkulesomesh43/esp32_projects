@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := ble_client
+PROJECT_NAME := ble_scanner
 
 COMPONENT_ADD_INCLUDEDIRS := components/include
 
