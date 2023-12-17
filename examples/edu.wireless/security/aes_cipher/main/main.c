@@ -5,7 +5,7 @@
     examples/edu.wireless/security/aes_cipher/main/main.c
 
   @brief
-    Basic use of AES Cipher for Encryption and Decryption with CBC Mode
+    Basic use of AES Cipher for Encryption and Decryption with CBC & CTR Mode
 
   @details
 

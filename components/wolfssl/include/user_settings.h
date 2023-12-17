@@ -75,7 +75,7 @@
 #define HAVE_ED25519
 
 /* when you want to use pkcs7 */
-/* #define HAVE_PKCS7 */
+#define HAVE_PKCS7
 
 #if defined(HAVE_PKCS7)
     #define HAVE_AES_KEYWRAP

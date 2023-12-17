@@ -5,7 +5,7 @@
     examples/edu.wireless/security/des_cipher/main/main.c
 
   @brief
-    Basic use of DES Cipher for Encryption and Decryption with CBC & CTR Mode
+    Basic use of DES & DES3 Cipher for Encryption and Decryption with CBC Mode
 
   @details
 
