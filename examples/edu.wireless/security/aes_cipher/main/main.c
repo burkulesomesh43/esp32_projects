@@ -36,7 +36,7 @@
 #include "wolfssl/wolfcrypt/aes.h"
 
 /* Use tag to print logs */
-#define TAG "SECURITY"
+#define TAG "CRYPTOGRAPHY"
 
 /* Different Key sizes to choose for AES Cipher */
 #define AES_BLOCK_SIZE_16  16
@@ -73,14 +73,14 @@ static void aes_cipher_cbc_mode_test( void )
   /* same IV size for different key size option */
   memcpy( iv, IV, strlen( IV ) );
 
-  ESP_LOGI(TAG, "---------------------------------------------" );
-  ESP_LOGI(TAG, "### AES CBC-Mode ENC/DEC with 128 bit Key ###" );
-  ESP_LOGI(TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "### AES CBC-Mode ENC/DEC with 128 bit Key ###" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
   memcpy( key, KEY_16, strlen( KEY_16 ) );
   memcpy( plain, PLAINTEXT_16, strlen( PLAINTEXT_16 ) );
-  ESP_LOGI(TAG, "I/P Plain Text : %s", plain );
-  ESP_LOGI(TAG, "I/P Key        : %s", key );
-  ESP_LOGI(TAG, "I/P IV         : %s", iv );
+  ESP_LOGI( TAG, "I/P Plain Text : %s", plain );
+  ESP_LOGI( TAG, "I/P Key        : %s", key );
+  ESP_LOGI( TAG, "I/P IV         : %s", iv );
 
   /* set key and iv to encrypt context */
   wc_AesSetKey( &enc, key, AES_BLOCK_SIZE_16, iv, AES_ENCRYPTION );
@@ -99,17 +99,17 @@ static void aes_cipher_cbc_mode_test( void )
 
   ESP_LOGI( TAG, "-> O/P Plain Text : %s", plain );
 
-  ESP_LOGI(TAG, "---------------------------------------------" );
-  ESP_LOGI(TAG, "### AES CBC-Mode ENC/DEC with 192 bit Key ###" );
-  ESP_LOGI(TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "### AES CBC-Mode ENC/DEC with 192 bit Key ###" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
   memset( key, 0, sizeof( key ) );
   memset( plain, 0, sizeof( plain ) );
 
   memcpy( key, KEY_24, strlen( KEY_24 ) );
   memcpy( plain, PLAINTEXT_24, strlen( PLAINTEXT_24 ) );
-  ESP_LOGI(TAG, "I/P Plain Text : %s", plain );
-  ESP_LOGI(TAG, "I/P Key        : %s", key );
-  ESP_LOGI(TAG, "I/P IV         : %s", iv );
+  ESP_LOGI( TAG, "I/P Plain Text : %s", plain );
+  ESP_LOGI( TAG, "I/P Key        : %s", key );
+  ESP_LOGI( TAG, "I/P IV         : %s", iv );
 
     /* set key and iv to encrypt context */
   wc_AesSetKey( &enc, key, AES_BLOCK_SIZE_24, iv, AES_ENCRYPTION );
@@ -128,9 +128,9 @@ static void aes_cipher_cbc_mode_test( void )
 
   ESP_LOGI( TAG, "-> O/P Plain Text : %s", plain );
 
-  ESP_LOGI(TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
   ESP_LOGI( TAG, "### AES CBC-Mode ENC/DEC with 256 bit Key ###" );
-  ESP_LOGI(TAG, "---------------------------------------------" );
+  ESP_LOGI( TAG, "---------------------------------------------" );
   memset( key, 0, sizeof( key ) );
   memset( plain, 0, sizeof( plain ) );
 
